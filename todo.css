@@ -1,0 +1,158 @@
+header{
+    border-bottom: 4px solid; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.name{
+    display: inline;
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 9%;
+}
+
+
+.main {
+    display: flex;
+    /* min-height: calc(100vh - header_height) */
+    min-height: calc(100vh - 10.4rem);
+    margin-bottom: 3.5rem;
+}
+
+.nav {
+    flex: 1;
+    max-width: 300px;
+    padding: 2rem;
+    background-color: aquamarine;
+    height: 79vh;
+}
+
+button {
+    display: block;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    margin: 1rem;
+}
+
+i{
+    margin-right: 1rem;
+}
+
+.project-preview {
+    flex: 5;
+    max-width: 900px;
+    padding: 2rem 4rem;
+  }
+
+.project-form,.task-form{
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-form.active,.task-form.active{
+    display: block;
+}
+
+.add-project-popup-buttons,.add-task-popup-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.button-add-project-popup,.button-cancel-project-popup,.button-add-task-popup,.button-cancel-task-popup{
+    width: 30%;
+}
+
+.input-add-project-popup,.input-add-task-popup{
+    width: 89%;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* 
+.add-project {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    background-color: var(--secondary-light);
+    text-align: left;
+  }
+  
+  .add-project.active {
+    display: none;
+  } */
+
+  .display-project-button{
+       display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    /* background-color: var(--secondary-light); */
+    text-align: left;
+  }
+
+  .right-project-panel {
+    display: flex;
+    align-items: center;
+    margin-left: 35rem;
+  }
+
+  .display-project-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    /* background-color: var(--primary-light); */
+    cursor: default;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+  }
+
+  .right-task-panel {
+    display: flex;
+    align-items: center;
+    margin-left: 40rem;
+  }
+
+  .left-task-panel {
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .button-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    /* background-color: var(--primary-light); */
+    cursor: default;
+    height: 3rem;
+  }
+
+  .fa-trash-alt{
+      margin-left:3rem;
+  }
+
+  .due-date{
+      /* margin-left: 1rem; */
+  }

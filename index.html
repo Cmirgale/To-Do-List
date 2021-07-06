@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TO-DO-LIST</title>
+</head>
+<body>
+    <header>
+            <div class="icon">
+                <img id="icon-img" src="images\rsz_icon.png" alt="ToDo-icon">
+            </div>   
+    
+            <div class="name">
+                To Do List
+            </div>
+    </header>
+<!-- Main -->
+<div class="main">
+    <nav class="nav">
+        <div class="sidebar">
+            <button id="add-project" class="add-project"><i class="fas fa-plus"></i>Add Project</button>
+            <button id="add-task" class="add-task"><i class="fas fa-plus"></i>Add Task</button>
+            <button id="display-button">Display</button>
+        </div>
+    </nav>
+<div class="project-preview" id="project-preview">
+    <div class="project-form" id="project-form">
+            <h2 class="add-project-heading">Add Project</h2>
+        <input type="text" class="input-add-project-popup" placeholder="Title" id="input-add-project-popup">
+
+                    <div class="add-project-popup-buttons">
+                        <button class="button-add-project-popup" id="button-add-project-popup">Add</button>
+
+                        <button class="button-cancel-project-popup" id="button-cancel-project-popup">Cancel</button>
+                    </div>
+    </div>
+    
+
+
+    <div class="task-form" id="task-form">
+        <h2 class="add-task-heading">Add Task</h2>
+        <input type="text" name="title" class="input-add-title-popup input-add-task-popup" id="input-add-title-popup" placeholder="Title"><br>
+                
+                <input type="date" name="date" class="input-add-date-popup  input-add-task-popup" id="input-add-date-popup" placeholder="Due Date"><br>
+                
+                <textarea name="desc" class="input-add-desc-popup  input-add-task-popup" id="input-add-desc-popup" rows="4" cols="50" placeholder="Description"></textarea><br>
+                
+                
+
+                <select name="priority" id="input-add-priority-popup" class="input-add-priority-popup  input-add-task-popup">
+                      <option value="" disabled selected hidden>Priority</option>  
+                      <option value="1">High</option>
+                      <option value="5">Medium</option>
+                      <option value="10">Low</option>
+                </select>
+
+                
+                <select name="project" id="input-add-project-popup" class="input-add-project-popup  input-add-task-popup project-drop-down">
+                    <option value="" disabled selected hidden>Project</option>
+                    <!-- <option value="default">Default</option> -->
+                </select>
+                
+                <div class="add-task-popup-buttons">
+                    
+                    <button class="button-add-task-popup" id="button-add-task-popup">Add</button>
+                    
+                    <button class="button-cancel-task-popup" id="button-cancel-task-popup">Cancel</button>
+                
+                </div>
+                </div>
+</div>
+</div>
+
+</div>  
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
